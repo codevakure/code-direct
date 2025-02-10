@@ -3,6 +3,7 @@
   "displayName": "VS Code Editor Metrics",
   "description": "Track VS Code metrics",
   "version": "0.0.1",
+  "publisher": "codevakure",
   "icon": "images/icon.png",
   "engines": {
     "vscode": "^1.85.0"
@@ -10,10 +11,19 @@
   "categories": [
     "Other"
   ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/codevakure/code-direct.git"
+  },
+  "galleryBanner": {
+    "color": "#C80000",
+    "theme": "dark"
+  },
   "activationEvents": [
-    "onStartupFinished"
+    "onStartupFinished",
+     "onCommand:code-direct.generateReport"
   ],
-  "main": "./dist/extension.js",
+  "main": "./out/extension.js",
   "contributes": {
     "commands": [
       {
